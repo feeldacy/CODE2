@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            padding: 25px;
+            background-color:burlywood;
+        }
+
+        nav {
+            padding: 1px;
+            background-color:beige;
+        }
+
+        main{
+            background-color: burlywood;
+            padding: 25px;
+            flex: 1;
+        }
+
+        aside{
+            background-color: darksalmon;
+            padding: 10px;
+            width: 30%; 
+        }
+
+        section{
+            background-color:beige;
+            padding: 20px;
+        }
+
+        article{
+            background-color:darksalmon ;
+            padding: 20px;
+            margin-bottom: 20px;            
+        }
+
+        .container {
+          display: flex; 
+        }
+
+        a {
+          font-size: 20px; 
+        }
+
+        footer {
+            background-color: beige;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">TARUH JUDUL KAMU DI SINI</h1>
+    </header>
+    <nav>
+        <ul align="center">
+            <a href="#">Java</a> |
+            <a href="#">Python</a> |
+            <a href="#">C##</a> |
+            <a href="#">HTML</a>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section>
+                <h2 align="center">KONTEN UTAMA ADA DI SINI</h2>
+                <article>
+                    <h3>Beri judul artikel</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta fugiat modi officia qui possimus mollitia blanditiis quo quibusdam, nostrum doloremque cupiditate nobis quos quis tenetur animi molestiae consequatur illum! Dolorem.</p>
+                </article>
+
+                <article>
+                    <h3>Beri judul artikel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo expedita distinctio quod cum quo quam similique, veniam illum accusantium placeat odio aut, ducimus nihil dolor alias numquam tenetur tempora?</p>
+                </article>
+            </section>
+        </main>
+
+        <aside>
+            <h4>Taruh informasi tambahan</h4>
+            <ul>
+                <li><a href="#">Perkenalan Java</a></li>
+                <li><a href="#">Perkenalan Python</a></li>
+                <li><a href="#">Perkenalan C##</a></li>
+                <li><a href="#">Perkenalan HTML</a></li>
+            </ul>  
+        </aside>
+    </div>
+    <footer>
+        <p align="center">Informasi penulis dan Hak Cipta.</p>
+    </footer>
+</body>
+</html>
