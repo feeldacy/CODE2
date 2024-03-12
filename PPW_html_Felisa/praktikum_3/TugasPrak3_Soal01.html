@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           display: flex;
+           /* height: 100vh; */
+           justify-content: center;
+           align-items: center;
+           background: linear-gradient(135deg, rgba(80,208,255,1), rgba(148,226,252,1));
+        }
+
+        .container{
+            max-width: 700px;
+            width: 90%;
+            height: max-content;
+            margin: 20px;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+        }
+
+        .container h1{
+            text-align: center;
+            margin: 20px;
+        }
+
+        .container p{
+            text-align: justify;
+        }
+
+        .container legend{
+            margin: 10px;
+            padding: 5px;
+            background: rgba(80,208,255,1) ;
+            border-radius: 50px;
+        }
+
+        .explain-fieldset{
+            margin: 10px;
+        }
+
+        fieldset{
+            margin: 10px;
+        }
+
+        .fieldset, 
+        .legend, 
+        .datalist, 
+        .output, 
+        .option, 
+        .optgroup, 
+        .disabled, 
+        .readonly,
+        .perbedaan{
+            background: rgba(148,226,252, .6);
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML TAG</h1>
+            <div class="htmltag">
+                <div class="fieldset">
+                    <h2>FIELDSET</h2><br>
+                    <p>Fieldset merupakan salah satu elemen pada HTML yang digunakan untuk mengelompokkan beberapa elemen. Fieldset biasanya disandingkan dengan elemen legend untuk memberikan nama pada fieldset. Berikut ini adalah contoh fieldset:</p>
+                    <fieldset>
+                        <legend>Contoh Fieldset</legend>
+                        <p class="explain-fieldset">Di dalam fieldset ini dapat dimasukkan elemen-elemen lain. Fieldset membantu sebuah formulir lebih rapi dan mudah dibaca. Fieldset biasa digunakan untuk mengelompokkan elemen-elemen yang memiliki keterhubungan logika ataupun kegunaan.</p>
+                    </fieldset>
+                </div>
+                <div class="legend">
+                    <h2>LEGEND</h2><br>
+                    <p>Seperti yang sudah disebutkan sebelumnya, legend merupakan elemen yang digunakan untuk memberikan nama/caption pada sebuah kelompok elemen pada elemen fieldset.</p>
+                </div>
+                <div class="datalist">
+                    <h2>DATALIST</h2><br>
+                    <p>Datalist elemen merupakan elemen yang menyediakan input field dan juga mampu memberikan pilihan kepada penggunanya. Berikut ini contoh datalist:</p><br>
+                    <label for="colors">Choose your favorite colors:</label><br>
+                    <input list="colors" name="colors" placeholder="Pick Colors">
+                        <datalist id="colors">
+                            <option value="Black"></option>
+                            <option value="Red"></option>
+                            <option value="Yellow"></option>
+                            <option value="Blue"></option>
+                        </datalist>
+                        </datalist>
+                    </input>
+                </div>
+                <div class="output">
+                    <h2>OUTPUT</h2><br>
+                    <p>Elemen output merupakan elemen yang berisikan/ mempresentasikan hasil perhitungan yang dilakukan oleh skrip atau pengguna. Berikut ini adalah contoh output:</p>
+                    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="number" id="b" name="b" value="50" /> +
+                        <input type="number" id="a" name="a" value="10" /> =
+                        <output name="result" for="a b">60</output>
+                    </form>
+                </div>
+                <div class="option">
+                    <h2>OPTION</h2><br>
+                    <p>Option merupakan elemen yang menampung item sebagai pilihan pada elemen select, optgroup elemen atau datalist elemen. Berikut ini contoh penggunaan option pada select elemen: 
+                    </p><br>
+                    <label for="continent">Choose Continent:</label><br>
+                        <select name="continent" id="continent">
+                        <option value="">--Please choose your continent--</option>
+                        <option value="dog">Asia</option>
+                        <option value="cat">Europe</option>
+                        <option value="hamster">Africa</option>
+                        <option value="parrot">Antartica</option>
+                        <option value="spider">Australia</option>
+                        <option value="goldfish">South America</option>
+                        <option value="goldfish">North America</option>
+                        </select>
+                </div>
+                <div class="optgroup">
+                    <h2>OPTGROUP</h2><br>
+                    <p>Optgroup merupakan elemen yang digunakan untuk mengelompokkan option/pilihan pada sebuah select elemen. Berikut ini contoh penggunaan optgroup:</p><br>
+                    <label for="colors-select">Choose a Color:</label><br>
+                    <select id="colors-select">
+                      <optgroup label="Dark Colors">
+                        <option>Black</option>
+                        <option>Deep Blue</option>
+                        <option>Dark Brown</option>
+                      </optgroup>
+                      <optgroup label="Bright Colors">
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>WHite</option>
+                      </optgroup>
+                    </select>
+                </div>
+            </div>
+            <h1>PERBEDAAN ATTRIBUT DISABLE DAN READONLY</h1>
+            <div class="container-diff">
+                <div class="disabled">
+                    <h2>ATTRIBUTE DISABLED</h2><br>
+                    <p>Atribut Disable ketika digunakan maka elemen yang memiliki atribut tersebut akan menjadi nonaktif atau tidak bisa diapa-apakan.</p>
+                </div>
+                <div class="readonly">
+                    <h2>ATTRIBUT READONLY</h2><br>
+                    <p>Atribut readonly ketika digunakan pada sebuah elemen maka elemen tersebut hanya bisa dibaca saja tanpa bisa diesit.</p>
+                </div>
+                <div class="perbedaan">
+                    <h3>Readonly</h3> <br>
+                    <form>Kode Buku:
+                        <input type="text" name="kode-buku" value="B001" readonly="readonly">
+                    </form><br>
+                    <h3>Disabled</h3><br>
+                    <form>Kode Buku:
+                        <input type="text" name="kode-buku" value="B001" disabled="disabled">
+                    </form><br>
+                    <h3>Perbedaan</h3><br>
+                    <p>Perbedaan dari kedua atribut itu adalah jika atribut readonly akan tetap mengirimkan nilai ke server sedangkan disabled tidak. Disabled digunakan untuk menyembunyikan fungsionalitas sebuah elemen, sedangkan readonly hanya mengurangi/mencegah aktivitas pengeditan.</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

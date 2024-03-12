@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Choose your favorite Web language:</p>
+<form method="post">
+ <input type="radio" id="html" name="fav_language" value="HTML">
+ <label for="html">HTML</label><br>
+
+ <input type="radio" id="css" name="fav_language" value="CSS">
+ <label for="css">CSS</label><br>
+
+ <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+ <label for="javascript">JavaScript</label><br><br>
+
+ <label for="cars">Choose a car:</label>
+ <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+ </select><br><br>
+
+
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John"><br><br>
+
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" required autofocus><br><br>
+
+<label for="notelp">Nomor Telepon:</label><br>
+<input type="text" name="notelo" id="notelp" placeholder="Masukkan nomor telepon"><br><br>
+   
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<input type="submit" value="Submit">
+
+</form><br><br>
+
+<svg width="200" height="200">
+    <rect width="200" height="200"
+    style="fill:rgb(255, 255, 255);stroke-width:10;stroke:blue" />
+    <circle cx="100" cy="100" r="94" stroke="red" stroke-width="2"
+    fill="orange" />
+</svg><br><br><br>
+
+<canvas id="myCanvas" width="400" height="200"></canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+
+    ctx.font = "30px Arial";
+    ctx.fillText("Halo, kak!", 195, 140)
+</script>
+
+</body>
+</html>
